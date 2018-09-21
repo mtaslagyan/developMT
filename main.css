@@ -1,0 +1,173 @@
+.banner{
+    position:relative;
+    background: url('/Users/mtaslagyan/Desktop/developMT/bannerimage.png') no-repeat center;
+    width:100%;
+    height:730px;
+    object-fit: cover;
+    background-size: cover;
+    
+}
+.bannerlogo{
+    
+    width:350px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:155px;
+    margin-bottom:153px;
+    
+}
+#navbar{
+    z-index: 1000;
+}
+.nav{
+    height:70px;
+    overflow:hidden;
+    
+    
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background:rgba(0, 0, 0, .7);
+}
+.sticky nav{
+    margin-top:0;
+}
+.sticky + .bannerpt2 {
+padding-top: 60px;
+
+}
+.nav-link{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:300;
+    font-size:20px;
+    color:white;
+    letter-spacing: 1px;
+    padding-top:20px;
+}
+.nav-item{
+    margin-right:50px;
+}
+.nav-item:last-child{
+    margin-right:0;
+}
+.nav-item:first-child{
+    margin-left:25px;
+}
+.nav-link:hover{
+    border-bottom: solid 1px rgb(251, 176, 59);
+    padding-bottom:15px;
+    color:rgb(251, 176, 59);
+}
+.content{
+    height:1000px;
+}
+
+.fa-home{
+    color:rgb(251, 176, 59);
+
+}
+.fa-home:hover{
+    color:rgb(255, 255, 255);
+    border-bottom-color: white;
+}
+.bannerpt2{
+    height:80px;
+    background:rgb(12, 12, 12)
+}
+.phoneemail{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:300;
+    color: rgb(56, 81, 143);
+    padding-top:20px;
+    font-size:30px;
+    
+}
+.phoneemail a{
+    color:rgb(77, 84, 100);
+    text-decoration: none;
+}
+.phoneemail a:hover{
+    border-bottom: solid 1px rgb(87, 116, 187);
+    text-decoration: none;
+    color:rgb(87, 116, 187);
+}
+.vl{
+    border-left: solid 2px rgb(77, 84, 100);
+    margin-left:30px;
+    margin-right:30px;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:300;
+    font-size:35px;
+}
+.divider{
+    background:black;
+    margin-bottom:30px;
+}
+.servicestitle{
+    margin-top:120px;
+    margin-bottom:20px;
+}
+.pricingtitle{
+    margin-top:120px;
+    margin-bottom:20px;
+}
+
+.boxelement{
+    width:300px;
+    height:300px;
+}
+.second{
+    margin-top:-150px;
+}
+.third{
+    margin-top:-150px;
+}
+.servicesparagraph{
+    font-size:19px;
+}
+.darkwrapper{
+    background:rgb(17, 17, 17);
+}
+.pricesparagraph{
+    color:white;
+    font-size:20px;
+    font-family: 'Questrial', 'Montserrat', sans-serif
+}
+.pricescheckout{
+    color:rgb(251, 176, 59);
+    font-size:18px;
+}
+.btn{
+    color:white;
+    background:rgb(251, 176, 59);
+    border:solid 1px rgb(251, 176, 59);
+    border-radius:40px;
+    padding: 15px 25px;
+    font-size:20px;
+    font-family: 'Questrial', 'Montserrat', sans-serif
+}
+.btn:hover{
+
+    background:rgb(190, 127, 24);
+    border:solid 1px rgb(251, 176, 59);
+    border-radius:40px;
+    padding: 15px 25px;
+    font-size:20px;
+    text-decoration: underline;
+    text-decoration-color: white;
+    color:white;
+}
+.pricebtn a{
+    color:white;
+    text-decoration-color: white;
+}
+.needspaceformentalhealth{
+    height:2000px;
+}
