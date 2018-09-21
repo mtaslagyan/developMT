@@ -184,7 +184,7 @@ form{
     border-radius:40px;
     padding: 15px 25px;
     font-size:20px;
-    font-family: 'Questrial', 'Montserrat', sans-serif
+    font-family: 'Questrial', 'Montserrat', sans-serif;
 }
 .whatlookingfor{
     font-size:16px;
@@ -209,4 +209,46 @@ form{
     word-wrap: wrap;
     padding:20px;
     position: static;
+}
+.form{
+    display:none;
+}
+.portfolioimages1{
+    padding-top:100px;
+    position:relative;
+    
+
+}
+.stripe{
+    position:absolute;
+    background: rgb(12, 12, 12);
+    height:125px;
+    margin-top:180px;
+
+}
+.portfolioimages2{
+    padding-top:100px;
+    position:relative;
+    
+
+}
+.portfolioimg{
+    width:275px;
+    height:300px;
+    border: solid 1px black;
+}
+.portdescript{
+    margin-top:50px;
+    color:black;
+    font-size:20px;
+    font-family: 'Questrial', 'Montserrat', sans-serif
+}
+.portdescript2{
+    margin-top:100px;
+    color:black;
+    font-size:20px;
+    font-family: 'Questrial', 'Montserrat', sans-serif
+}
+.highlight2{
+    color:#CE1126;
 }
