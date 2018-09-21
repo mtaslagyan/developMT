@@ -197,6 +197,7 @@ form{
 }
 .what-tabs{
     padding:100px 30px;
+    position: static;
 }
 
 .divider2{
@@ -207,4 +208,5 @@ form{
 .commentsquestions{
     word-wrap: wrap;
     padding:20px;
+    position: static;
 }
