@@ -7,7 +7,7 @@ html, body{
     background: url('bannerimage.png') no-repeat center;
     width:100%;
     height:auto;
-    /* object-fit:contain; */
+    object-fit:cover;
     background-size: cover;
     
     
