@@ -12,8 +12,7 @@ html, body{
     
     
 }
-.bannerlogo{
-    
+.bannerlogo{  
     width:350px;
     display:block;
     margin-left:auto;
@@ -356,7 +355,7 @@ form{
 }
 footer{
     margin-top:50px;
-    height:250px;
+    height:auto;
     background: rgb(5, 6, 26);
 }
 .footerlogo{
@@ -399,13 +398,18 @@ footer{
 }
 
 .vertical-nav-link{
-    color: rgb(251, 176, 59);
+    color: rgb(255, 255, 255);
     font-family: 'Montserrat', sans-serif;
     font-weight:300;
+    
 }
 
 .vertical-nav-link:hover{
-    color: white;
+    color: rgb(251, 176, 59);
+    border-left: solid 2px white;
+    padding-left:30px;
+    text-decoration: none;
+
 }
 
 .no-show{
@@ -425,7 +429,14 @@ footer{
     width:50px;
 
 }
-
+.fa-ellipsis-h{
+    font-size:30px;
+    color: rgb(251, 176, 59);
+    margin-top:20px;
+}
+.banner2break{
+    display:none;
+}
 
 
 
@@ -435,5 +446,68 @@ footer{
     }
     #hori-button{
         display:block;
+        
+    
     }
+
+    .first .boxelement3 {
+        margin-top:-150px;
+    }
+    
+    .fa-home{
+        font-size:45px;
+ 
+    }
+    .bannerpt2{
+        height:110px;
+        
+    }
+    .vl{
+        display:none;
+    }
+    .banner2break{
+        display:block;
+    }
+    .bannerpt2email{
+        font-size:22px;
+    }
+
+ }
+
+
+@media (max-width: 767.98px) { 
+    .first .boxelement3 {
+        margin-top:2px;
+        margin-bottom:150px;
+    }
+    .third{
+        margin-top:2px;
+    }
+    .aboutusdescript{
+        font-size:18px;
+        padding:50px 50px 20px 50px;
+
+        text-align: center;
+    }
+    .contactemail{
+        font-size:18px;
+    }
+    .contactdescript{
+        text-align: center;
+    }
+    footer{
+        text-align:center;
+    }
+    .northridge{
+        padding:0;
+        margin:0;
+        margin-top:30px;
+    }
+    .footercontact{
+        padding:0;
+        margin:30px 0 30px 0;
+        
+    }
+
+    
  }
