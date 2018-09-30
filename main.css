@@ -441,6 +441,7 @@ footer{
 
 
 @media (max-width: 991.98px) { 
+    
     .hori-nav{
         display:none;
     }
@@ -470,6 +471,10 @@ footer{
     }
     .bannerpt2email{
         font-size:22px;
+    }
+    .aboutusdescript{
+        font-size:12px;
+        
     }
 
  }
