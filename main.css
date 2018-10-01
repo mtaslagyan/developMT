@@ -359,6 +359,7 @@ footer{
     background: rgb(5, 6, 26);
 }
 .footerlogo{
+    margin-bottom:40px;
     margin-top:40px;
     width:175px;
     border: solid 1px white;
@@ -512,6 +513,13 @@ footer{
         padding:0;
         margin:30px 0 30px 0;
         
+    }
+    .footerlogo{
+        margin-bottom:10px;
+        margin-top:40px;
+        width:175px;
+        border: solid 1px white;
+        border-radius:50%;
     }
 
     
