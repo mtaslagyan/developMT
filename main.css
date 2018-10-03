@@ -12,6 +12,8 @@ html, body{
     
     
 }
+
+
 .bannerlogo{  
     width:350px;
     display:block;
@@ -19,16 +21,18 @@ html, body{
     margin-right:auto;
     padding-top:155px;
     margin-bottom:153px;
-    
+    /* animation: fadeEffect 1s; */
+
 }
 #navbar{
     z-index: 1000;
+    
 }
 .nav{
     height:70px;
     overflow:hidden;
-    
-    
+    animation: slideFromRight 2s;
+   
 }
 
 
@@ -38,13 +42,15 @@ html, body{
     width: 100%;
     background:rgba(0, 0, 0, .7);
 }
-.sticky nav{
+/* .sticky nav{
     margin-top:0;
-}
-.sticky + .bannerpt2 {
-padding-top: 60px;
+} */
 
+
+.sticky + #content {
+    padding-top: 70px;
 }
+
 .nav-link{
     font-family: 'Montserrat', sans-serif;
     font-weight:300;
@@ -52,9 +58,11 @@ padding-top: 60px;
     color:white;
     letter-spacing: 1px;
     padding-top:20px;
+    
 }
 .nav-item{
     margin-right:50px;
+    
 }
 .nav-item:last-child{
     margin-right:0;
@@ -79,15 +87,17 @@ padding-top: 60px;
 }
 .bannerpt2{
     height:80px;
-    background:rgb(12, 12, 12)
+    background:rgb(12, 12, 12);
+    
 }
+
 .phoneemail{
     font-family: 'Montserrat', sans-serif;
     font-weight:300;
     color: rgb(56, 81, 143);
     padding-top:20px;
     font-size:30px;
-    
+    animation: slideFromLeft 2s;
 }
 .phoneemail a{
     color:rgb(77, 84, 100);
@@ -133,10 +143,15 @@ h1{
 }
 .servicesparagraph{
     font-size:19px;
+    animation: fadeEffect 2s;
 }
 .darkwrapper{
     background:rgb(17, 17, 17);
     
+}
+.forpricinggohere{
+    
+    float:right;
 }
 .pricesparagraph{
     color:white;
@@ -441,6 +456,7 @@ footer{
 
 
 
+
 @media (max-width: 991.98px) { 
     
     .hori-nav{
@@ -524,3 +540,36 @@ footer{
 
     
  }
+
+
+ /* ANIMATIONS :)  */
+
+ 
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromRight {
+    from {
+      transform: translate(250px);
+    }
+    to {
+      transform: translate(0px);
+    }
+  }
+
+
+  @keyframes slideFromLeft {
+    from {
+      transform: translate(-250px);
+    }
+    to {
+      transform: translate(0px);
+    }
+  }
