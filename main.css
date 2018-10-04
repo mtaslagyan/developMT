@@ -6,9 +6,9 @@ html, body{
     position:relative;
     background: url('bannerimage.png') no-repeat center;
     width:100%;
-    height:auto;
-    object-fit: fit;
-    background-size: fit;
+    height:750px;
+    /* object-fit: contain;
+    background-size: contain; */
     
     
 }
@@ -46,11 +46,11 @@ html, body{
 }
 
 
-.service-stick-mode{
-    margin-top:70px;
+/* .service-stick-mode{
+    padding-top:70px;
     
     
-   }
+   } */
 
 /* .sticky + #content {
     margin-top:70px;

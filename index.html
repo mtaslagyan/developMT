@@ -99,19 +99,19 @@
         </div>
         
         <div class="forservicegohere"></div>
-        <section id="content">
-                <!-- <section class="bannerpt2">
-                        <div class="container">
-                            <div class="row test" >
-                                <div class="col-12" >
-                                    <h2 class=" phoneemail text-center"> <a href="tel:13238219808">(323) 821-9808</a>  <span class="vl"></span> <br class="banner2break"> <a class="bannerpt2email" href="mailto: developmt.contact@gmail.com">developmt.contact@gmail.com</a></h2>
-                                </div>
+        <section id="service-wrapper">
+            <section class="bannerpt2">
+                    <div class="container">
+                        <div class="row " >
+                            <div class="col-12" >
+                                <h2 class=" phoneemail text-center"> <a href="tel:13238219808">(323) 821-9808</a>  <span class="vl"></span> <br class="banner2break"> <a class="bannerpt2email" href="mailto: developmt.contact@gmail.com">developmt.contact@gmail.com</a></h2>
                             </div>
                         </div>
-                </section> -->
+                    </div>
+            </section>
             <div class="container">
                 <div class="row">
-                    <div class="col-12" id="service-wrapper">
+                    <div class="col-12">
                         <h1 class="servicestitle text-center">Services</h1>
                         <hr class="divider">
                     </div>
@@ -425,16 +425,16 @@
             
            
             var navbar = document.getElementById("navbar");
-            var serviceWrapper = document.getElementById("service-wrapper");
+           
             var sticky = navbar.offsetTop;
             
             function myFunction() {
                 if (window.pageYOffset >= sticky) {
                     navbar.classList.add("sticky");
-                    serviceWrapper.classList.add("service-stick-mode");
+                   
                 } else {
                     navbar.classList.remove("sticky");
-                    serviceWrapper.classList.remove("service-stick-mode");
+                    
                 }
             }
 
