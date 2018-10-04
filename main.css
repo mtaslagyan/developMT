@@ -6,11 +6,8 @@ html, body{
     position:relative;
     background: url('bannerimage.png') no-repeat center;
     width:100%;
-    height:750px;
-    /* object-fit: contain;
-    background-size: contain; */
-    
-    
+    height:720px;
+ 
 }
 
 
@@ -19,14 +16,20 @@ html, body{
     display:block;
     margin-left:auto;
     margin-right:auto;
-    padding-top:155px;
-    margin-bottom:153px;
+    padding-top:135px;
+    margin-bottom:166px;
     
 
 }
+#navbar2{
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.7);
+    width:100%;
+    display:none;
+}
 #navbar{
     z-index: 1000;
-    
+    display:block;
 }
 .nav{
     height:70px;
@@ -445,9 +448,7 @@ footer{
     display:none;
     z-index: 1000;
 }
-.bannerpt2-height{
-    margin-top:500px;
-}
+
 .dots{
     width:50px;
 
@@ -465,7 +466,16 @@ footer{
 
 /* medium */
 @media (max-width: 991.98px) { 
-    
+    .bannerlogo{
+        padding-top:200px;
+    }
+    #navbar2{
+        display:block;
+        position:fixed;
+    }
+    #navbar{
+        display:none;
+    }
     .hori-nav{
         display:none;
     }
