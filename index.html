@@ -95,21 +95,22 @@
             </section>
             
             
-            <!-- <section class="bannerpt2">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <h2 class=" phoneemail text-center"> <a href="tel:13238219808">(323) 821-9808</a>  <span class="vl"></span> <br class="banner2break"> <a class="bannerpt2email" href="mailto: developmt.contact@gmail.com">developmt.contact@gmail.com</a></h2>
-                            </div>
+            
+        </div>
+        <section class="bannerpt2">
+                <div class="container">
+                    <div class="row test" >
+                        <div class="col-12" >
+                            <h2 class=" phoneemail text-center"> <a href="tel:13238219808">(323) 821-9808</a>  <span class="vl"></span> <br class="banner2break"> <a class="bannerpt2email" href="mailto: developmt.contact@gmail.com">developmt.contact@gmail.com</a></h2>
                         </div>
                     </div>
-            </section> -->
-        </div>
+                </div>
+        </section>
         <div class="forservicegohere"></div>
         <section id="content">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12" id="service-wrapper">
                         <h1 class="servicestitle text-center">Services</h1>
                         <hr class="divider">
                     </div>
@@ -140,7 +141,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="forpricinggohere"></div>
+            <div class="forpricinggohere"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-12 ">
@@ -266,13 +267,13 @@
             <div class="container">
                 <div class="row portfolioimages1  text-center">
                     <div class="col-4">
-                            <img class="portfolioimg" src="csundesktop.png">
+                            <img class="portfolioimg portimg1" src="csundesktop.png">
                     </div>
                     <div class="col-4">
-                            <img class="portfolioimg" src="csunfacdesktop2.png">
+                            <img class="portfolioimg portimg2" src="csunfacdesktop2.png">
                     </div>
                     <div class="col-4">
-                            <img class="portfolioimg" src="csun-depts.png">
+                            <img class="portfolioimg portimg3" src="csun-depts.png">
                     </div>
                 </div>
             </div>  
@@ -296,13 +297,13 @@
                 <div class="container">
                     <div class="row portfolioimages2 text-center">
                         <div class="col-4">
-                            <img class="portfolioimg" src="seattledesktop.png">
+                            <img class="portfolioimg portimg4" src="seattledesktop.png">
                         </div>
                         <div class="col-4">
-                            <img class="portfolioimg" src="RWDdesktop.png">
+                            <img class="portfolioimg portimg5" src="RWDdesktop.png">
                         </div>
                         <div class="col-4">
-                            <img class="portfolioimg" src="resumaniahome.png">
+                            <img class="portfolioimg portimg6" src="resumaniahome.png">
                         </div>
                     </div>
                 </div>  
@@ -412,7 +413,7 @@
                 </div>
             </div>
             
-        </footer> -->
+        </footer>
 
         
         
@@ -421,92 +422,96 @@
     <script>
             window.onscroll = function() {myFunction()};
             
+           
             var navbar = document.getElementById("navbar");
+            var serviceWrapper = document.getElementById("service-wrapper");
             var sticky = navbar.offsetTop;
             
             function myFunction() {
-              if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-              } else {
-                navbar.classList.remove("sticky");
-              }
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky");
+                    serviceWrapper.classList.add("service-stick-mode");
+                } else {
+                    navbar.classList.remove("sticky");
+                    serviceWrapper.classList.remove("service-stick-mode");
+                }
             }
 
 
-//             $('#pricebutton').click(function() {
-//                 $('#form').slideDown("fast", function() {
-//                     $("html,body").animate({
-//                         scrollTop:$("#quotescroll").offset().top,
-//                     });
-//                 });
-//             });
-//             var horinav = document.getElementsByClassName("hori-nav");
-//             var hoributton = document.getElementById("hori-button");
-//             var vertinav = document.getElementById("vertical-navbar");
-//             var bannerpt2 = document.getElementsByClassName("bannerpt2");
-//             var vertinavlink = document.getElementsByClassName("vertical-nav-link")
+            $('#pricebutton').click(function() {
+                $('#form').slideDown("fast", function() {
+                    $("html,body").animate({
+                        scrollTop:$("#quotescroll").offset().top,
+                    });
+                });
+            });
+            var horinav = document.getElementsByClassName("hori-nav");
+            var hoributton = document.getElementById("hori-button");
+            var vertinav = document.getElementById("vertical-navbar");
+            var bannerpt2 = document.getElementsByClassName("bannerpt2");
+            var vertinavlink = document.getElementsByClassName("vertical-nav-link")
 
 
 
 //             // Home
-//                 $(".home").click(function() {
-//                 $('html,body').animate({
-//                 scrollTop: $(".forhomegohere").offset().top},
-//                 'slow');
-//                 });
+                $(".home").click(function() {
+                $('html,body').animate({
+                scrollTop: $(".forhomegohere").offset().top},
+                'slow');
+                });
 
 //             // Services
-//             $(".services").click(function() {
-//                 $('html,body').animate({
-//                 scrollTop: $(".forservicegohere").offset().top},
-//                 'slow');
-//             });
+            $(".services").click(function() {
+                $('html,body').animate({
+                scrollTop: $(".forservicegohere").offset().top},
+                'slow');
+            });
 //             // Pricing
-//             $(".pricing").click(function() {
-//                 $('html,body').animate({
-//                 scrollTop: $(".forpricinggohere").offset().top},
-//                 'slow');
-//             });
+            $(".pricing").click(function() {
+                $('html,body').animate({
+                scrollTop: $(".forpricinggohere").offset().top},
+                'slow');
+            });
 //             // Portfolio
-//             $(".portfolio").click(function() {
-//                 $('html,body').animate({
-//                 scrollTop: $(".forportfoliogohere").offset().top},
-//                 'slow');
-//             });
+            $(".portfolio").click(function() {
+                $('html,body').animate({
+                scrollTop: $(".forportfoliogohere").offset().top},
+                'slow');
+            });
 //             // About
-//             $(".about").click(function() {
-//                 $('html,body').animate({
-//                 scrollTop: $(".foraboutgohere").offset().top},
-//                 'slow');
-//             });
+            $(".about").click(function() {
+                $('html,body').animate({
+                scrollTop: $(".foraboutgohere").offset().top},
+                'slow');
+            });
 //             // Contact
-//             $(".contact").click(function() {
-//                 $('html,body').animate({
-//                 scrollTop: $(".forcontactgohere").offset().top},
-//                 'slow');
-//             });
+            $(".contact").click(function() {
+                $('html,body').animate({
+                scrollTop: $(".forcontactgohere").offset().top},
+                'slow');
+            });
             
 
 
 
             
 
-//             hoributton.onclick = function(){
-//                 vertinav.classList.toggle('no-show');
-//                 // bannerpt2.classList.add('bannerpt2-height');
-//             };
+            hoributton.onclick = function(){
+                vertinav.classList.toggle('no-show');
+                // bannerpt2.classList.add('bannerpt2-height');
+            };
 
            
 
-//             // vertinavlink.onclick = function(){
-//             //     vertinav.classList.toggle('no-show');
-//             //     // bannerpt2.classList.add('bannerpt2-height');
-//             // };
+            vertinavlink.onclick = function(){
+                vertinav.classList.toggle('no-show');
+                // bannerpt2.classList.add('bannerpt2-height');
+            };
 
 
-// $(".vertical-nav-link").click(function() {
-//                 $('#vertical-navbar').addClass('no-show');
-//             });
+$(".vertical-nav-link").click(function() {
+                $('#vertical-navbar').addClass('no-show');
+            });
 
 
 

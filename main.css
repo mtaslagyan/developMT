@@ -41,18 +41,23 @@ html, body{
     top: 0;
     width: 100%;
     background:rgba(0, 0, 0, .7);
+    
+    
 }
-/* .sticky nav{
-    margin-top:0;
-} */
 
+
+.service-stick-mode{
+    margin-top:70px;
+    
+    
+   }
 
 .sticky + #content {
-    padding-top: 70px;
+    margin-top:70px;
 }
 
 .nav-link{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mxontserrat', sans-serif;
     font-weight:300;
     font-size:20px;
     color:white;
@@ -126,6 +131,7 @@ h1{
     margin-top:120px;
     margin-bottom:20px;
 }
+
 .pricingtitle{
     margin-top:120px;
     margin-bottom:20px;
@@ -456,7 +462,7 @@ footer{
 
 
 
-
+/* medium */
 @media (max-width: 991.98px) { 
     
     .hori-nav{
@@ -493,10 +499,25 @@ footer{
         font-size:12px;
         
     }
+    .stripe{
+        display:none;
+    }
+    .portimg1:hover{
+        
+        opacity: .3;
+    }
+    .portimg2:hover{
+        
+        opacity: .3;
+    }
+    .portimg3:hover{
+        
+        opacity: .3;
+    }
 
  }
 
-
+/* smaller */
 @media (max-width: 767.98px) { 
     .first .boxelement3 {
         margin-top:2px;
