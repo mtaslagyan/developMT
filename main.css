@@ -517,7 +517,8 @@ footer{
         overflow: visible;
         white-space:nowrap;
         overflow-x: scroll;
-        overflow-y: hidden;     
+        overflow-y: hidden; 
+        -webkit-overflow-scrolling: touch;    
     }
     
     #carousel .slide {
