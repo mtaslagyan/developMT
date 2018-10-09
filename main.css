@@ -484,7 +484,7 @@ footer{
 { 
     .trythiswrapper{
         display:block;
-        background: rgb(220, 220, 220); 
+        background: rgb(245, 245, 245); 
         height:30px;
     }
     .scrollformore{
@@ -512,7 +512,7 @@ footer{
         margin-top:75px;
         height:475px;
         width: 100%;
-        background: rgb(220, 220, 220); 
+        background: rgb(245, 245, 245); 
         padding-bottom:50px;
         overflow: visible;
         white-space:nowrap;
