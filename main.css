@@ -1,5 +1,6 @@
 html, body{
     overflow-x:hidden;
+
 }
 
 .banner{
@@ -49,15 +50,7 @@ html, body{
 }
 
 
-/* .service-stick-mode{
-    padding-top:70px;
-    
-    
-   } */
 
-/* .sticky + #content {
-    margin-top:70px;
-} */
 
 .nav-link{
     font-family: 'Mxontserrat', sans-serif;
@@ -243,8 +236,9 @@ form{
     display:none;
 }
 .portfolioimages1{
-    padding-top:100px;
+    margin-top:90px;
     position:relative;
+    
     
 
 }
@@ -302,14 +296,14 @@ form{
     color:white;
     padding:100px 100px 20px 100px;
     font-family: 'Questrial', 'Montserrat', sans-serif;
-    font-size:25px;
+    font-size: 1.4vw;
     line-height:1.5;
 
 }
 .divider3{
     background:rgb(251, 176, 59);
     
-    margin-bottom:80px;
+   
     width:71%;
 
 
@@ -468,10 +462,67 @@ footer{
     display:none;
 }
 
+.portdescriptmed{
+    display:none;
+}
 
+.hideformed{
+    display:none;
+}
+
+.scrollformore{
+    display:none;
+}
+.trythiswrapper{
+    display:none;
+}
 
 /* medium */
-@media (max-width: 991.98px) { 
+@media (max-width: 991.98px)
+
+
+{ 
+    .trythiswrapper{
+        display:block;
+        background: rgb(220, 220, 220); 
+        height:30px;
+    }
+    .scrollformore{
+        
+        display:block;
+        color:grey;
+  
+    }
+    .hideformed{
+        display:block;
+        
+    }
+    .portimages2med{
+        display:none;
+    }
+    .portdescript2{
+        display:none;
+    }
+    .portdescriptmed{
+        display:block;
+        margin-top:0;
+    }
+
+    #carousel {
+        margin-top:75px;
+        height:475px;
+        width: 100%;
+        background: rgb(220, 220, 220); 
+        padding-bottom:50px;
+        overflow: visible;
+        white-space:nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;     
+    }
+    
+    #carousel .slide {
+        display: inline-block;
+    }
     .bannerlogo{
         padding-top:200px;
     }
@@ -490,7 +541,13 @@ footer{
         
     
     }
+    .aboutusdescript{
+        padding:100px 60px 20px 75px;
 
+    }
+    .divider3{
+        width:85%;
+    }
     .banner{
         height:650px;
     }
@@ -522,20 +579,24 @@ footer{
     .stripe{
         display:none;
     }
-    .portimg1:hover{
-        
-        opacity: .3;
+    
+
+
+
+ }
+
+
+ @media (max-width: 890.98px) {
+    .aboutusdescript{
+        padding:63px 60px 20px 25px;
+
     }
-    .portimg2:hover{
-        
-        opacity: .3;
-    }
-    .portimg3:hover{
-        
-        opacity: .3;
+    .divider3{
+        width:85%;
     }
 
  }
+
 
 /* smaller */
 @media (max-width: 767.98px) { 
@@ -582,6 +643,7 @@ footer{
         border-radius:50%;
     }
 
+    
     
  }
 
