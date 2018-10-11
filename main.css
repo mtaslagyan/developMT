@@ -481,6 +481,10 @@ footer{
 .aboutusdescript{
     padding:100px 100px 20px 100px;
 
+
+}
+.intro{
+    font-size:30px;
 }
 
 
@@ -492,15 +496,22 @@ footer{
         padding:100px 100px 20px 100px;
 
     }
+    
 }
+
 
 /* medium */
 @media (max-width: 991.98px)
 
 
-{ .footerphoneemail{
+{ 
+    .intro{
+    font-size:20px;
+    }
+    
+    .footerphoneemail{
     padding-bottom:30px;
-}
+    }
     .trythiswrapper{
         display:block;
         background: rgb(245, 245, 245); 
@@ -611,7 +622,9 @@ footer{
     .divider3{
         width:85%;
     }
-
+    .intro{
+        font-size:18px;
+    }
  }
 
 
